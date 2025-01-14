@@ -1,0 +1,4 @@
+org\epf\hadoop\colfil3\UserSimilarityReducer.class
+org\epf\hadoop\colfil3\ColFilJob3.class
+org\epf\hadoop\colfil3\UserPairWritable.class
+org\epf\hadoop\colfil3\UserSimilarityMapper.class

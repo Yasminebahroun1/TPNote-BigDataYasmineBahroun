@@ -33,6 +33,10 @@ public class ColFilJob1 implements Tool {
         job.setReducerClass(RelationshipReducer.class);
         job.setInputFormatClass(RelationshipInputFormat.class);
 
+        // Ajoute 2 reducers
+        job.setNumReduceTasks(2);  // Cette ligne ajoute deux reducers
+
+
         // Types de sortie
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(Text.class);

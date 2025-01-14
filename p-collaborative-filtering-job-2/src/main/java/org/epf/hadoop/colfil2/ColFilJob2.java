@@ -27,6 +27,9 @@ public class ColFilJob2 {
         job.setMapperClass(RelationshipMapper2.class);
         job.setReducerClass(RelationshipReducer2.class);
 
+        // Ajoute 2 reducers
+        job.setNumReduceTasks(2);  // Cette ligne ajoute deux reducers
+
         job.setMapOutputKeyClass(UserPair.class);
         job.setMapOutputValueClass(IntWritable.class);
         job.setOutputKeyClass(UserPair.class);
